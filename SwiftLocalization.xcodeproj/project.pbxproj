@@ -13,6 +13,10 @@
 		F2BD45972689097300E0CE9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD45952689097300E0CE9E /* Main.storyboard */; };
 		F2BD45992689097300E0CE9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BD45982689097300E0CE9E /* Assets.xcassets */; };
 		F2BD459C2689097300E0CE9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD459A2689097300E0CE9E /* LaunchScreen.storyboard */; };
+		F2BD45A526890DDC00E0CE9E /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD45A426890DDC00E0CE9E /* LocalizationService.swift */; };
+		F2BD45A826891F6600E0CE9E /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD45A726891F6600E0CE9E /* Localization.swift */; };
+		F2BD45AA26891FD600E0CE9E /* LanguageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD45A926891FD600E0CE9E /* LanguageService.swift */; };
+		F2BD45AD2689207A00E0CE9E /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD45AC2689207A00E0CE9E /* LanguageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F2BD45982689097300E0CE9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2BD459B2689097300E0CE9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2BD459D2689097300E0CE9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2BD45A426890DDC00E0CE9E /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
+		F2BD45A726891F6600E0CE9E /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		F2BD45A926891FD600E0CE9E /* LanguageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageService.swift; sourceTree = "<group>"; };
+		F2BD45AC2689207A00E0CE9E /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		F2BD458E2689097300E0CE9E /* SwiftLocalization */ = {
 			isa = PBXGroup;
 			children = (
+				F2BD45AB2689204F00E0CE9E /* Model */,
+				F2BD45A626890E0A00E0CE9E /* Service */,
 				F2BD458F2689097300E0CE9E /* AppDelegate.swift */,
 				F2BD45912689097300E0CE9E /* SceneDelegate.swift */,
 				F2BD45932689097300E0CE9E /* ViewController.swift */,
@@ -65,6 +75,32 @@
 				F2BD459D2689097300E0CE9E /* Info.plist */,
 			);
 			path = SwiftLocalization;
+			sourceTree = "<group>";
+		};
+		F2BD45A326890D5700E0CE9E /* LocalizationService */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD45A426890DDC00E0CE9E /* LocalizationService.swift */,
+				F2BD45A926891FD600E0CE9E /* LanguageService.swift */,
+			);
+			path = LocalizationService;
+			sourceTree = "<group>";
+		};
+		F2BD45A626890E0A00E0CE9E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD45A326890D5700E0CE9E /* LocalizationService */,
+				F2BD45A726891F6600E0CE9E /* Localization.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F2BD45AB2689204F00E0CE9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD45AC2689207A00E0CE9E /* LanguageModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2BD45942689097300E0CE9E /* ViewController.swift in Sources */,
+				F2BD45AA26891FD600E0CE9E /* LanguageService.swift in Sources */,
+				F2BD45AD2689207A00E0CE9E /* LanguageModel.swift in Sources */,
+				F2BD45A826891F6600E0CE9E /* Localization.swift in Sources */,
 				F2BD45902689097300E0CE9E /* AppDelegate.swift in Sources */,
+				F2BD45A526890DDC00E0CE9E /* LocalizationService.swift in Sources */,
 				F2BD45922689097300E0CE9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
