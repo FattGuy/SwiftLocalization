@@ -10,9 +10,6 @@ import UIKit
 
 class LanguageService {
     static var shared = LanguageService()
-    var labelView:UIVisualEffectView = UIVisualEffectView()
-    var labelVerifying:UILabel = UILabel()
-    var spinner:UIActivityIndicatorView = UIActivityIndicatorView(style: .gray)
     
     func getLanguagesFromServer(url: URL,fromVC:UIViewController)  {
 //        self.showLoading()
@@ -23,8 +20,7 @@ class LanguageService {
                 print(error?.localizedDescription ?? "Response Error")
                 return }
             do{
-                let jsonResponse = try JSONSerialization.jsonObject(with:
-                                                                        dataResponse, options: []) as?  [String : Any]
+                let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: []) as?  [String : Any]
                 if let languagesArray = jsonResponse!["languages"] as? [[String : Any]] {
                     for lang in languagesArray {
                         let translations = lang["translations"] as? Dictionary<String,String>
@@ -33,7 +29,7 @@ class LanguageService {
                         let rt = Localization(translations:dict)
                         do {
                             _ = try rt.writeToBundle()
-                        }catch {
+                        } catch {
                             print("error")
                         }
                     }

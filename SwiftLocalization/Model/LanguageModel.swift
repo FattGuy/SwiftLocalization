@@ -8,6 +8,6 @@
 import Foundation
 
 struct LanguageModel {
-    let code: String
+    var code: String
     var fullName: String
 }

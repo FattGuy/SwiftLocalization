@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F26CBF14268A2017003DFAC5 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CBF13268A2017003DFAC5 /* AppConstants.swift */; };
 		F2BD45902689097300E0CE9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD458F2689097300E0CE9E /* AppDelegate.swift */; };
 		F2BD45922689097300E0CE9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD45912689097300E0CE9E /* SceneDelegate.swift */; };
 		F2BD45942689097300E0CE9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD45932689097300E0CE9E /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F26CBF13268A2017003DFAC5 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		F2BD458C2689097300E0CE9E /* SwiftLocalization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLocalization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD458F2689097300E0CE9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2BD45912689097300E0CE9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				F2BD45982689097300E0CE9E /* Assets.xcassets */,
 				F2BD459A2689097300E0CE9E /* LaunchScreen.storyboard */,
 				F2BD459D2689097300E0CE9E /* Info.plist */,
+				F26CBF13268A2017003DFAC5 /* AppConstants.swift */,
 			);
 			path = SwiftLocalization;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				F2BD45942689097300E0CE9E /* ViewController.swift in Sources */,
 				F2BD45AA26891FD600E0CE9E /* LanguageService.swift in Sources */,
 				F2BD45AD2689207A00E0CE9E /* LanguageModel.swift in Sources */,
+				F26CBF14268A2017003DFAC5 /* AppConstants.swift in Sources */,
 				F2BD45A826891F6600E0CE9E /* Localization.swift in Sources */,
 				F2BD45902689097300E0CE9E /* AppDelegate.swift in Sources */,
 				F2BD45A526890DDC00E0CE9E /* LocalizationService.swift in Sources */,
